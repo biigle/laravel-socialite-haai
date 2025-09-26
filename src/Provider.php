@@ -7,7 +7,7 @@ use GuzzleHttp\RequestOptions;
 use SocialiteProviders\Manager\OAuth2\AbstractProvider;
 use SocialiteProviders\Manager\OAuth2\User;
 
-class SocialiteProvider extends AbstractProvider
+class Provider extends AbstractProvider
 {
     public const IDENTIFIER = 'HAAI';
 
