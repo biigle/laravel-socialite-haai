@@ -16,7 +16,7 @@ class ServiceProvider extends BaseServiceProvider
    * @param  Router  $router
    * @return  void
    */
-    public function boot(Modules $modules, Router $router)
+    public function boot()
     {
         Event::listen(function (SocialiteWasCalled $event) {
             $event->extendSocialite('haai', Provider::class);
