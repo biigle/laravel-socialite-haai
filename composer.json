@@ -1,0 +1,36 @@
+{
+    "name": "biigle/laravel-socialite-haai",
+    "description": "Helmholtz AAI OAuth2 Provider for Laravel Socialite",
+    "keywords": [
+        "laravel",
+        "login",
+        "oauth",
+        "provider",
+        "socialite"
+    ],
+    "homepage": "https://github.com/biigle/laravel-socialite-haai",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Zurowietz",
+            "email": "m.zurowietz@uni-bielefeld.de"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "socialiteproviders/manager": "^4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Biigle\\SocialiteProviders\\HelmholtzAAI\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Biigle\\SocialiteProviders\\HelmholtzAAI\\ServiceProvider"
+            ]
+        }
+    }
+}
